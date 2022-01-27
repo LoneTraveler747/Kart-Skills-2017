@@ -7,4 +7,20 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Materials Image\checkered-flag-sports-tool.ico" />
+    <None Remove="Materials Image\Dengi.png" />
+    <None Remove="Materials Image\Informatsia.png" />
+    <None Remove="Materials Image\Klyuch.png" />
+    <None Remove="Materials Image\Shlem.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Materials Image\checkered-flag-sports-tool.ico" />
+    <Resource Include="Materials Image\Dengi.png" />
+    <Resource Include="Materials Image\Informatsia.png" />
+    <Resource Include="Materials Image\Klyuch.png" />
+    <Resource Include="Materials Image\Shlem.png" />
+  </ItemGroup>
+
 </Project>
