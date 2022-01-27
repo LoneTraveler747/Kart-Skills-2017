@@ -10,21 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Kart_Skills_2017
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для SponsorOfRider.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class SponsorOfRider : Window
     {
-        public MainWindow()
+        public SponsorOfRider()
         {
             InitializeComponent();
-            Timer timer = new Timer();
-            ViewTimer.Children.Add(timer);
         }
     }
 }

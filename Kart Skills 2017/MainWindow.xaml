@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Kart_Skills_2017"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="600"
-        WindowStyle="None">
+        WindowStyle="None"
+        >
     <Grid Background="Gray">
         <Grid.RowDefinitions>
             <RowDefinition Height="25"/>
@@ -97,6 +98,8 @@
                 </Grid>
             </Grid>
         </Grid>
-        <UserControl Grid.Row="3"/>
+        <Grid Grid.Row="3">
+            <StackPanel Name="ViewTimer" Orientation="Vertical"/>
+        </Grid>
     </Grid>
 </Window>

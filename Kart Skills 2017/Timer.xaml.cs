@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace Kart_Skills_2017
 {
@@ -23,6 +24,14 @@ namespace Kart_Skills_2017
         public Timer()
         {
             InitializeComponent();
+        }
+
+        private DispatcherTimer timer;
+        private DateTime dateTime = new DateTime(2056, 9, 22, 1, 1, 1);
+        public void StartTime()
+        {
+            timer = new DispatcherTimer();
+            timer.Interval = new TimeSpan(0, 0, 1);
         }
     }
 }
