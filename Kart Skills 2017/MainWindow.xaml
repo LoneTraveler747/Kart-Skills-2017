@@ -11,7 +11,7 @@
     <Grid Background="Gray">
         <Grid.RowDefinitions>
             <RowDefinition Height="25"/>
-            <RowDefinition Height="70"/>
+            <RowDefinition Height="60"/>
             <RowDefinition/>
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
@@ -40,7 +40,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <TextBlock Text="Kart Skills 2017" FontSize="25" Grid.Row="0" TextAlignment="Center"/>
-            <TextBlock Text="Москва, Россия 20 июня 2017" FontSize="15" Grid.Row="1"/>
+            <TextBlock Text="Москва, Россия 20 июня 2017" FontSize="14" Grid.Row="1"/>
         </Grid>
         <Grid Grid.Row="2" Background="White">
             <Grid.ColumnDefinitions>
