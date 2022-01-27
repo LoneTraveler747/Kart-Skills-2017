@@ -9,18 +9,26 @@
 
   <ItemGroup>
     <None Remove="Materials Image\checkered-flag-sports-tool.ico" />
+    <None Remove="Materials Image\close.png" />
     <None Remove="Materials Image\Dengi.png" />
+    <None Remove="Materials Image\fullscreen.png" />
     <None Remove="Materials Image\Informatsia.png" />
     <None Remove="Materials Image\Klyuch.png" />
+    <None Remove="Materials Image\minus.png" />
     <None Remove="Materials Image\Shlem.png" />
+    <None Remove="Materials Image\UnderBorder.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Materials Image\checkered-flag-sports-tool.ico" />
+    <Resource Include="Materials Image\close.png" />
     <Resource Include="Materials Image\Dengi.png" />
+    <Resource Include="Materials Image\fullscreen.png" />
     <Resource Include="Materials Image\Informatsia.png" />
     <Resource Include="Materials Image\Klyuch.png" />
+    <Resource Include="Materials Image\minus.png" />
     <Resource Include="Materials Image\Shlem.png" />
+    <Resource Include="Materials Image\UnderBorder.png" />
   </ItemGroup>
 
 </Project>
