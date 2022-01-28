@@ -10,26 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Kart_Skills_2017
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для ListOfCharitableOrganizations.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ListOfCharitableOrganizations : Window
     {
-        public MainWindow()
+        public ListOfCharitableOrganizations()
         {
             InitializeComponent();
-            Timer timer = new Timer();
-            ViewTimer.Children.Add(timer);
-        }
-
-        private void Exit_Click(object sender, RoutedEventArgs e)
-        {
-            Close();
+            
         }
     }
 }

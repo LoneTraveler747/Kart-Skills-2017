@@ -16,20 +16,20 @@ using System.Windows.Shapes;
 namespace Kart_Skills_2017
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для Organization.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Organization : UserControl
     {
-        public MainWindow()
+        public Organization()
         {
             InitializeComponent();
-            Timer timer = new Timer();
-            ViewTimer.Children.Add(timer);
         }
 
-        private void Exit_Click(object sender, RoutedEventArgs e)
+        public ImageSource image;
+        public ImageSource MyPatternImage
         {
-            Close();
+            get{ return image; }
+            set{ image = value; ImageOrganization.Source = value; }
         }
     }
 }

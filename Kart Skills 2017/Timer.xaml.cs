@@ -24,14 +24,30 @@ namespace Kart_Skills_2017
         public Timer()
         {
             InitializeComponent();
+            TimerOnKarting_TargetUpdated();
         }
 
         private DispatcherTimer timer;
-        private DateTime dateTime = new DateTime(2056, 9, 22, 1, 1, 1);
-        public void StartTime()
+        private DateTime dateTime = new DateTime(2056, 9, 22, 1, 59, 59);
+        //public void StartTime()
+        //{
+        //    timer = new DispatcherTimer();
+        //    timer.Interval = new TimeSpan(0, 0, 1);
+        //    TimeSpan different = dateTime.Subtract(DateTime.Now);
+        //    TimerOnKarting.Text = $"{different.Days} дней {different.Hours} часов и {different.Minutes} минут {different.Seconds} секунд до старта марафона!";
+        //}
+
+        private void TimerOnKarting_TargetUpdated()
         {
             timer = new DispatcherTimer();
-            timer.Interval = new TimeSpan(0, 0, 1);
+            TimeSpan timeSpan = dateTime.Subtract(DateTime.Now);
+            timer.Tick += Timer_Tick;
+            timer.Start();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            TimerOnKarting.Text = $" До начала события осталось: {dateTime.Year - DateTime.Now.Year} лет, {Math.Abs(dateTime.Month- DateTime.Now.Month)} месяцев, {Math.Abs(dateTime.Day - DateTime.Now.Day)} дней, {Math.Abs(dateTime.Hour - DateTime.Now.Hour)} часов, {Math.Abs(dateTime.Minute - DateTime.Now.Minute)} минут и {Math.Abs(dateTime.Second - DateTime.Now.Second)} секунд";
         }
     }
 }
